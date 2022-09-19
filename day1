@@ -1,0 +1,67 @@
+fun main() {
+    println("Hello, world!!!")
+    
+    val result = multiply(10, 10)
+    println("Result of multiplying 10 * 10 is $result")
+    printGreeting(greeting="Namaste", name="Raj")
+    
+    var rectangle = Rectangle(0, 0, 100, 100)
+    rectangle.area()
+    println(rectangle)
+    println("Area = ${rectangle.area()}")
+    
+    //creating a default constructor
+    var rect2 = Rectangle()
+    rect2.draw()
+    
+    var shape:Shape = Rectangle()
+    
+    
+    var shapes:List<Drawable> = listOf(Rectangle(), Rectangle(), Rectangle(), Circle())
+    for(shape in shapes) {
+        shape.draw()
+    }
+    
+    
+    
+    
+}
+
+fun multiply(x:Int, y:Int):Int = x * y
+
+fun printGreeting(name:String = "Amit", greeting:String = "Hello") {
+    println("$greeting $name")
+}
+
+interface Drawable {
+    fun draw()
+}
+
+open class Shape(var xPos:Int, var yPos:Int) {
+
+}
+
+class Rectangle(xPos:Int, yPos:Int, var width:Int, var height:Int) : Shape(xPos, yPos), Drawable {
+    init {
+        println("Width = ${this.width}, Height = ${this.height}")
+    }
+    
+    constructor():this(0, 0, 0, 0) {
+        
+    }
+    fun area() = width * height
+    
+    override fun draw() {
+        println("Drawing Rectangle")
+    }
+    
+}
+
+class Circle(xPos:Int, yPos:Int, var radius:Double) : Shape(xPos, yPos), Drawable {
+    constructor():this(0, 0, 0.0) {
+        
+    }
+	override fun draw() {
+        println("Drawing Circle")
+    }
+}
