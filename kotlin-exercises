@@ -1,0 +1,11 @@
+kotlin-exercises
+
+1. Write a kotlin function that takes in a string as parameter and returns the lengths of the string.
+2. write a kotlin function that takes in a variable number of integers as arguments and returns the average of the integers
+3. write a function in kotlin that takes an array as parameter and returns the smallest number in the array.
+4. write a function in kotlin that takes in an array of strings and returns an array that contains a concatenation of all the strings
+5. Write a function in kotlin to takes 2 parameters weight, and height, and calculates the BMI of a person and returns a string representing their status i.e. "normal", "underweight", "overweight", 
+6. Write a function that takes in a number between 1 - 7 and returns a string that represents day of the week (use when expression)
+
+
+
