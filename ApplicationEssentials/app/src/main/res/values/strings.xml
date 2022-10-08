@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ApplicationEssentials</string>
+    <string name="make_phone_call_button_title">Make Phone Call</string>
+    <string name="take_picture_button_title">Take Picture</string>
+    <string name="browse_web_button_title">Browse Web</string>
+    <string name="launch_main_button_title">Launch Main</string>
+</resources>
